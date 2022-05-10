@@ -19,6 +19,8 @@
 		792721DE282992F200146D8F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792721DC282992F200146D8F /* Home.swift */; };
 		792721E02829B1A200146D8F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792721DF2829B1A200146D8F /* HomeView.swift */; };
 		792721E12829B1A200146D8F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792721DF2829B1A200146D8F /* HomeView.swift */; };
+		79487F19282AEE8100D4A665 /* UpdateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79487F18282AEE8100D4A665 /* UpdateList.swift */; };
+		79487F1A282AEE8100D4A665 /* UpdateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79487F18282AEE8100D4A665 /* UpdateList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,7 @@
 		792721D92829776F00146D8F /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		792721DC282992F200146D8F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		792721DF2829B1A200146D8F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		79487F18282AEE8100D4A665 /* UpdateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,7 @@
 				792721D92829776F00146D8F /* MenuView.swift */,
 				792721DC282992F200146D8F /* Home.swift */,
 				792721DF2829B1A200146D8F /* HomeView.swift */,
+				79487F18282AEE8100D4A665 /* UpdateList.swift */,
 				792721BD2822F7C400146D8F /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -190,6 +194,7 @@
 			files = (
 				792721CD2822F7C400146D8F /* ContentView.swift in Sources */,
 				792721DA2829776F00146D8F /* MenuView.swift in Sources */,
+				79487F19282AEE8100D4A665 /* UpdateList.swift in Sources */,
 				792721DD282992F200146D8F /* Home.swift in Sources */,
 				792721E02829B1A200146D8F /* HomeView.swift in Sources */,
 				792721CB2822F7C400146D8F /* DesignCodeChallengeOneApp.swift in Sources */,
@@ -202,6 +207,7 @@
 			files = (
 				792721CE2822F7C400146D8F /* ContentView.swift in Sources */,
 				792721DB2829776F00146D8F /* MenuView.swift in Sources */,
+				79487F1A282AEE8100D4A665 /* UpdateList.swift in Sources */,
 				792721DE282992F200146D8F /* Home.swift in Sources */,
 				792721E12829B1A200146D8F /* HomeView.swift in Sources */,
 				792721CC2822F7C400146D8F /* DesignCodeChallengeOneApp.swift in Sources */,
