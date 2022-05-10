@@ -20,7 +20,7 @@ struct UpdateList: View {
             
             List(updateData) { update in
                 
-                NavigationLink(destination: Text(update.text)) {
+                NavigationLink(destination: UpdateDetail(update: update)) {
                     
                     HStack {
                         
