@@ -25,6 +25,10 @@
 		79487F1D282AFE3900D4A665 /* UpdateDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79487F1B282AFE3900D4A665 /* UpdateDetail.swift */; };
 		79487F1F282B01DC00D4A665 /* UpdateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79487F1E282B01DC00D4A665 /* UpdateStore.swift */; };
 		79487F20282B01DC00D4A665 /* UpdateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79487F1E282B01DC00D4A665 /* UpdateStore.swift */; };
+		79487F22282B079600D4A665 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79487F21282B079600D4A665 /* TabBar.swift */; };
+		79487F23282B079600D4A665 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79487F21282B079600D4A665 /* TabBar.swift */; };
+		79487F25282D4E4700D4A665 /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79487F24282D4E4700D4A665 /* RingView.swift */; };
+		79487F26282D4E4700D4A665 /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79487F24282D4E4700D4A665 /* RingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,8 @@
 		79487F18282AEE8100D4A665 /* UpdateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateList.swift; sourceTree = "<group>"; };
 		79487F1B282AFE3900D4A665 /* UpdateDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDetail.swift; sourceTree = "<group>"; };
 		79487F1E282B01DC00D4A665 /* UpdateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateStore.swift; sourceTree = "<group>"; };
+		79487F21282B079600D4A665 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		79487F24282D4E4700D4A665 /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,12 +80,14 @@
 			children = (
 				792721BB2822F7C200146D8F /* DesignCodeChallengeOneApp.swift */,
 				792721BC2822F7C200146D8F /* ContentView.swift */,
+				79487F24282D4E4700D4A665 /* RingView.swift */,
 				792721D92829776F00146D8F /* MenuView.swift */,
 				792721DC282992F200146D8F /* Home.swift */,
 				792721DF2829B1A200146D8F /* HomeView.swift */,
 				79487F18282AEE8100D4A665 /* UpdateList.swift */,
-				79487F1E282B01DC00D4A665 /* UpdateStore.swift */,
 				79487F1B282AFE3900D4A665 /* UpdateDetail.swift */,
+				79487F1E282B01DC00D4A665 /* UpdateStore.swift */,
+				79487F21282B079600D4A665 /* TabBar.swift */,
 				792721BD2822F7C400146D8F /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -200,7 +208,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79487F25282D4E4700D4A665 /* RingView.swift in Sources */,
 				79487F1C282AFE3900D4A665 /* UpdateDetail.swift in Sources */,
+				79487F22282B079600D4A665 /* TabBar.swift in Sources */,
 				792721CD2822F7C400146D8F /* ContentView.swift in Sources */,
 				792721DA2829776F00146D8F /* MenuView.swift in Sources */,
 				79487F19282AEE8100D4A665 /* UpdateList.swift in Sources */,
@@ -215,7 +225,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79487F26282D4E4700D4A665 /* RingView.swift in Sources */,
 				79487F1D282AFE3900D4A665 /* UpdateDetail.swift in Sources */,
+				79487F23282B079600D4A665 /* TabBar.swift in Sources */,
 				792721CE2822F7C400146D8F /* ContentView.swift in Sources */,
 				792721DB2829776F00146D8F /* MenuView.swift in Sources */,
 				79487F1A282AEE8100D4A665 /* UpdateList.swift in Sources */,
