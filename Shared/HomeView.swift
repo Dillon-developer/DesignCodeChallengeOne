@@ -46,6 +46,12 @@ struct HomeView: View {
             .padding(.top, 30)
             
             ScrollView(.horizontal, showsIndicators: false) {
+                WatchRingsView()
+                    .padding(.horizontal, 30)
+                    .padding(.bottom, 30)
+            }
+            
+            ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 20) {
                     ForEach(sectionData) { item in
                         GeometryReader { geometry in
@@ -123,3 +129,52 @@ let sectionData = [
     Section(title: "SwiftUI Advanced", text: "20 Sections", logo: "Logo3", image: Image("Card3"), color: Color("card3")),
     Section(title: "Extra Content", text: "5 Sections", logo: "Logo4", image: Image("Card4"), color: Color("card4")),
 ]
+
+struct WatchRingsView: View {
+    var body: some View {
+        HStack(spacing: 30.0) {
+            
+            
+            HStack(spacing: 12.0) {
+                RingView(color1: Color.indigo, color2: Color.purple, color3: Color.indigo, width: 44, height: 44, percent: 89, show: .constant(true))
+                
+                VStack(alignment: .leading, spacing: 4.0) {
+                    Text("6 minutes left")
+                        .bold()
+                        .modifier(FontModifier(style: .subheadline))
+                    
+                    Text("Watched 10 mins today")
+                        .modifier(FontModifier(style: .caption))
+                    
+                }
+                
+                
+            }
+            .padding(8)
+            .background(.white)
+            .cornerRadius(20)
+            .modifier(ShadowModifier())
+            
+            HStack(spacing: 12.0) {
+                RingView(color1: Color.blue, color2: Color.cyan, color3: Color.green, width: 32, height: 32, percent: 55, show: .constant(true))
+                
+                
+            }
+            .padding(8)
+            .background(.white)
+            .cornerRadius(20)
+            .modifier(ShadowModifier())
+            
+            HStack(spacing: 12.0) {
+                RingView(color1: Color.red, color2: Color.pink, color3: Color.red, width: 32, height: 32, percent: 20, show: .constant(true))
+                
+                
+            }
+            .padding(8)
+            .background(.white)
+            .cornerRadius(20)
+            .modifier(ShadowModifier())
+            
+        }
+    }
+}

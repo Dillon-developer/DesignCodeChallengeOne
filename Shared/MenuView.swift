@@ -45,6 +45,7 @@ struct MenuView: View {
                     .clipShape(Circle())
                     .offset(y: -150)
                     .shadow(color: .black.opacity(0.1), radius: 10, x: 0, y: 20)
+                    
             )
         }
         .padding(.bottom, 30)
