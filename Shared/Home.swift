@@ -12,6 +12,7 @@ struct Home: View {
     
     @State var showProfile = false
     @State var viewState = CGSize.zero
+    @State var showContent = false
     
     var body: some View {
         ZStack {
@@ -21,9 +22,15 @@ struct Home: View {
                 .opacity(0.5)
                 .ignoresSafeArea(.all)
             
-            HomeView(showProfile: $showProfile)
+            HomeView(showProfile: $showProfile, showContent: $showContent)
                 .padding(.top, 44)
-                .background(.white)
+                .background(
+                    VStack {
+                    LinearGradient(gradient: Gradient(colors: [Color("background2"), Color.white]), startPoint: .top, endPoint: .bottom)
+                        .frame(height: 200)
+                    Spacer()
+                    }.background(.white)
+                )
                 .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
                 .shadow(color: .black.opacity(0.2), radius: 20, x: 0, y: 20)
                 .offset(y: showProfile ? -450 : 0)
@@ -31,6 +38,7 @@ struct Home: View {
                 .scaleEffect(showProfile ? 0.9 : 1)
                 .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0), value: showProfile)
                 .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0), value: viewState)
+                .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0), value: showContent)
                 .ignoresSafeArea(.all)
             
             
@@ -41,6 +49,7 @@ struct Home: View {
                 .offset(y: viewState.height)
                 .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0), value: showProfile)
                 .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0), value: viewState)
+                .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0), value: showContent)
 
                 .onTapGesture {
                     self.showProfile.toggle()
@@ -56,6 +65,31 @@ struct Home: View {
                         self.viewState = .zero
                     }
                 )
+            if showContent {
+                Color
+                    .white
+                    .edgesIgnoringSafeArea(.all)
+                ContentView()
+                
+                VStack {
+                    HStack {
+                        Spacer()
+                        Image(systemName: "xmark")
+                            .frame(width: 36, height: 36)
+                            .foregroundColor(.white)
+                            .background(.black)
+                        .clipShape(Circle())
+                    }
+                    Spacer()
+                }
+                .offset(x: -16, y: 16)
+                .transition(.move(edge: .top))
+                .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0), value: self.showContent)
+                
+                .onTapGesture {
+                    self.showContent = false
+                }
+            }
         }
     }
 }
