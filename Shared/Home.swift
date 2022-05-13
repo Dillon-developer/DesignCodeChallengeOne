@@ -87,7 +87,10 @@ struct Home: View {
                 .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0), value: self.showContent)
                 
                 .onTapGesture {
-                    self.showContent = false
+                    withAnimation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0)) {
+                        self.showContent = false
+                    }
+                    
                 }
             }
         }

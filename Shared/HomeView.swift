@@ -53,7 +53,9 @@ struct HomeView: View {
                         .padding(.horizontal, 30)
                         .padding(.bottom, 30)
                         .onTapGesture {
-                            self.showContent = true
+                            withAnimation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0)) {
+                                self.showContent = true
+                            }
                         }
                 }
                 
